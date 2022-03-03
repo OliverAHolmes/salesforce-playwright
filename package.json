@@ -1,5 +1,5 @@
 {
-  "name": "sfdx-auto-org",
+  "name": "salesforce-playwright",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
