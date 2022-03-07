@@ -1,8 +1,7 @@
 import * as process from 'child_process'; 
 
-export default function getURL(dir){
-    const url = execute(dir);
-    return url;
+export default function getOrgURLs(dir){
+    return execute(dir);
 }
 
 function execute(dir){
@@ -29,6 +28,9 @@ function processLineByLine(data) {
 
     });
 
-    return instanceUrl + '/secur/frontdoor.jsp?sid=' + accessToken;
+    return [
+        instanceUrl, 
+        instanceUrl + '/secur/frontdoor.jsp?sid=' + accessToken // frontdoor url
+    ];
 
 }
