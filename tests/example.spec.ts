@@ -1,7 +1,9 @@
 import { test, expect } from '@playwright/test';
 import getOrgAuthUrls from './sfdx-interface';
 
-const sfOrgUrls = getOrgAuthUrls('../projects/lumary-core/');
+const sfdxProjectDir = '../projects/lumary-core/';
+
+const sfOrgUrls = getOrgAuthUrls(sfdxProjectDir);
 const sfOrgUrl = sfOrgUrls[0];
 const sfOrgUrlFrontDoor = sfOrgUrls[1];
 
