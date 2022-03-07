@@ -20,4 +20,3 @@ A project to automate Salesforce Scratch Org set up using Playwright: https://pl
     - await page.goto(sfOrgUrl + '/lightning/page/home');
 
     There is a example included that add nav items.
----
